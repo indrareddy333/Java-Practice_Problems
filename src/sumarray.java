@@ -12,33 +12,15 @@ public class sumarray {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        int[] array = new int[2];
-        int i = 0;
-        while (nums.length - 1 >= i) {
-            boolean bin = false;
-            int num = 1;
-            int num1 = 1;
-            if(nums.length >= 5){
-                num1 = 2;
-            }
-            while(nums.length-num1 >= num){
-                if((nums[i]+nums[i+num]) == target){
-                    array[0] = i;
-                    array[1] = i+num;
-                    bin = true;
-                    break;
+        int n = nums.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[]{i, j};
                 }
-                num++;
             }
-            if(bin){
-                break;
-            }
-            else{
-                i++;
-            }
-
         }
-        return array;
+        return new int[]{};
     }
 
 }
