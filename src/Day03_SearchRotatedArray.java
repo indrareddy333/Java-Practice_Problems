@@ -1,13 +1,16 @@
 
 public class Day03_SearchRotatedArray {
     public static void main(String[] args) {
-        int[] nums = {3,4,5,6,7,8,9,0,1,2};
-        System.out.println(searchRotatedarray(nums, 9));
+        int[] nums = {1,2,3,4,5,6};
+        System.out.println(searchRotatedarray(nums, 6));
         System.out.println(pivot(nums));
     }
     public static int searchRotatedarray(int[] nums, int target){
         int pivot = pivot(nums);
         int firstasc = BinarySearch(nums,target,0, pivot);
+        if(pivot == -1){
+            return BinarySearch(nums, target,0, nums.length);
+        }
         if(pivot == target){
             return pivot;
         }
@@ -36,7 +39,7 @@ public class Day03_SearchRotatedArray {
         return -1;
     }
     public static int BinarySearch(int[] nums, int target, int start, int end){
-        while(start<= end){
+        while(start <= end){
             int mid = (start+end)/2;
             if(nums[mid] < target){
                 start = mid+1;
