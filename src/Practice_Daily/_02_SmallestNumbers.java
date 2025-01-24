@@ -2,7 +2,7 @@ package Practice_Daily;
 
 import java.util.Arrays;
 
-public class _Day_02_SmallestNumbers {
+public class _02_SmallestNumbers {
     public static void main(String[] args) {
         int[] nums = {7,7,7,7};
         // output = 2,1,0,3
