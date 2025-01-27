@@ -1,6 +1,6 @@
 package Practice_Daily;
 
-public class CountItemMatchingRule {
+public class _09_CountItemMatchingRule {
     public static void main(String[] args) {
         String[][] items = {{"phone","blue","pixel"},{"computer","silver","phone"},{"phone","gold","iphone"}};
         String ruleKey = "type";
