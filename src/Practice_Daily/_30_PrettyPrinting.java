@@ -1,6 +1,6 @@
 package Practice_Daily;
 
-public class PrettyPrinting {
+public class _30_PrettyPrinting {
     public static void main(String[] args) {
         float a = 432.1245f;
         System.out.printf("%.2f",a);
