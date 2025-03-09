@@ -13,7 +13,6 @@ public class _103_GoalParser {
         //The final concatenated result is "Goal".
         String command = "G()(al)";
         System.out.println(interpret(command));
-
     }
     public static String interpret(String command) {
         command = command.replace("()", "o");
