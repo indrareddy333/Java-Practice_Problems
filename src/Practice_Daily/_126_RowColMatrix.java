@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class _126_RowColMatrix {
     public static void main(String[] args) {
-        public static void main (String[]args){
             int[][] nums = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
             int target = 8;
             System.out.println(Arrays.toString(rowColMtatrix(nums, target)));
@@ -42,6 +41,5 @@ public class _126_RowColMatrix {
             }
             return -1;
         }
-
-
     }
+
